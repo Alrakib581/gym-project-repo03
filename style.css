@@ -1,13 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Poppins', sans-serif;
-    background-color:white;
-    margin: 0;
+}
+.container{
+   max-width: 1200px;
+   margin: 0 auto;
 }
 #banner-section{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 200px;
+    height: 700px;
+   
 }
 .banner-container{
     width: 40%;
@@ -25,31 +33,118 @@ h1{
     
 }
 .skip{
-    color: wheat;
+    color: tomato;
 }
 .common-btn{
     text-decoration: none;
     padding: 15px 40px;
     border-radius: 50px;
-    background-color: #333333;
+    background-image: linear-gradient(to right,tomato,rgb(176, 14, 162) );
     color: white;
     display: inline-block;
+    margin-top: 20px;
     
 }
 /* poster-section start  */
-.poster-section{
-    
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.about-me{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(./image/Frame\ 58.jpg);
+  background-size: cover;
+  height:700px;
 }
 
-
+.about-me-left{
+    width: 40%;
+}
 .poster-right{
-   width: 35%;
+   width: 45%;
 }
-.poster-img{
-    width: 400px;
+.about-img{
+    width:70%;
 }
 /* poster-section end  */
+/* Recipies section start  */
+.recipie-section{
+    height: 700px;
+
+}
+.recipie-heading{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.recipie-heading h2{
+    margin: 40px auto;
+    font-size: 40px;
+}
+.recipie-heading p{
+    margin-bottom: 20px;
+}
+.card-main-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card1{
+    width: 550px;
+    height: 500px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+  
+}
+.card-img{
+    width:90%;
+    border-radius: 50px;
+    padding: 20px 0px;
+
+   
+    
+}
+.card-p{
+    width: 80%;
+}
+/* recipies section end  */
+
+.social-container{
+    width: 1000px;
+    height: 200px;
+    background-color: aliceblue;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.social-section{
+    height: 500px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-child h3{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:900;
+    
+}
+footer{
+    background-color: #333;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer h2{
+    color: tomato;
+}
+footer p{
+    color: white;
+}
